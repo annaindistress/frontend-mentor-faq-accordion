@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 30px;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
   font-weight: 600;
   font-size: 16px;
   outline: none;

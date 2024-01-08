@@ -1,0 +1,16 @@
+@import './fonts.css';
+@import './components/box-sizing.css';
+@import './components/sr-only.css';
+@import './components/page.css';
+@import './components/card.css';
+@import './components/accordion.css';
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-pink: hsl(275, 100%, 97%);
+  --color-pale-purple: hsl(292, 16%, 49%);
+  --color-pink: hsl(281, 83%, 54%);
+  --color-dark-pink-alpha: hsla(281, 100%, 23%, 10%);
+  --color-dark-purple: hsl(292, 42%, 14%);
+  --color-black: hsl(0, 0%, 0%);
+}

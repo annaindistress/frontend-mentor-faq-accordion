@@ -1,0 +1,56 @@
+.accordion__title {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+  gap: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+}
+
+.accordion__title::-webkit-details-marker,
+.accordion__title::marker {
+  display: none;
+  content: none;
+}
+
+.accordion__title:focus {
+  color: var(--color-pink);
+}
+
+.accordion__title::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/images/icon-plus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.accordion[open] .accordion__title::after {
+  background-image: url('/images/icon-minus.svg');
+}
+
+.accordion__text {
+  margin: 0;
+  padding-top: 24px;
+  line-height: 1.5;
+  color: var(--color-pale-purple);
+}
+
+@media (min-width: 768px) {
+
+  .accordion__title {
+    font-size: 18px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .accordion__title:hover {
+    color: var(--color-pink);
+    cursor: pointer;
+  }
+}
